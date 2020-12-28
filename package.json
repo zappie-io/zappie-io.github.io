@@ -12,10 +12,13 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages-clean && dotenv cross-var echo '%GH_CUSTOM_DOMAIN%' > ./public/CNAME && dotenv cross-var gh-pages -b master -d public -r https://%GH_ACCESS_TOKEN%@%GH_DEPLOY_REPO%"
   },
   "license": "0BSD",
   "dependencies": {
+    "cross-var": "^1.1.0",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-google-analytics": "^2.8.0",
@@ -27,6 +30,7 @@
     "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-sharp": "^2.9.0",
+    "gh-pages": "^3.1.0",
     "node-sass": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
