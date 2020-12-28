@@ -1,14 +1,16 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
-    title: "Zappie",
-    siteUrl: "https://zappie.io",
+    title: process.env.SITE_TITLE,
+    siteUrl: process.env.SITE_URL,
   },
   plugins: [
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "G-XWD2LXLTJK",
+        trackingId: process.env.GOOGLE_TRACKING_ID,
       },
     },
     "gatsby-plugin-sharp",
