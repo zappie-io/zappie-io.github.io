@@ -2,7 +2,7 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: process.env.SITE_TITLE,
+    title: "zappie",
     siteUrl: process.env.SITE_URL,
   },
   plugins: [
