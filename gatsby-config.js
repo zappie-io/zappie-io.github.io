@@ -6,7 +6,8 @@ module.exports = {
     siteUrl: process.env.SITE_URL,
   },
   plugins: [
-    "gatsby-plugin-sass",
+    "gatsby-plugin-root-import",
+    "gatsby-plugin-scss-typescript",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -31,6 +32,14 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true,
+        jsxPragma: `jsx`,
+        allExtensions: true,
+      },
     },
   ],
 };
