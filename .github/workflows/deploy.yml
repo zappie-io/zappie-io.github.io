@@ -27,9 +27,6 @@ jobs:
         
       - name: Yarn install
         run: yarn install --frozen-lockfile
-        
-      - name: Dotenv install
-        run: yarn global add dotenv-cli
 
       - uses: enriikke/gatsby-gh-pages-action@v2
         env:
@@ -38,5 +35,5 @@ jobs:
           SITE_URL: "https://zappie.io"
           GOOGLE_TRACKING_ID: "G-XWD2LXLTJK"
         with:
-          deploy-repo:  "github.com/zappie-io/zappie-io.github.io.git"
+          deploy-repo:  "zappie-io.github.io.git"
           access-token: ${{ secrets.gh_access_token }}
