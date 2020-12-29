@@ -24,6 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        
+      - name: Create .env file
+        uses: SpicyPizza/create-envfile@v1.0
 
       - name: Yarn install
         run: yarn install --frozen-lockfile
