@@ -27,6 +27,9 @@ jobs:
         
       - name: Yarn install
         run: yarn install --frozen-lockfile
+        
+      - name: Dotenv install
+        run: yarn global add dotenv-cli
 
       - name: Yarn deploy
         run: yarn deploy
