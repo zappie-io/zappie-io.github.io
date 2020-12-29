@@ -35,5 +35,5 @@ jobs:
           SITE_URL: "https://zappie.io"
           GOOGLE_TRACKING_ID: "G-XWD2LXLTJK"
         with:
-          deploy-repo:  "zappie-io.github.io.git"
+          deploy-branch: gh-pages
           access-token: ${{ secrets.gh_access_token }}
