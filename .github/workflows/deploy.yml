@@ -30,8 +30,6 @@ jobs:
 
       - uses: enriikke/gatsby-gh-pages-action@v2
         env:
-          GH_CUSTOM_DOMAIN: "zappie.io"
-          SITE_TITLE: "zappie"
           SITE_URL: "https://zappie.io"
           GOOGLE_TRACKING_ID: "G-XWD2LXLTJK"
         with:
