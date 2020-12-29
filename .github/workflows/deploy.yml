@@ -31,12 +31,12 @@ jobs:
       - name: Dotenv install
         run: yarn global add dotenv-cli
 
-      - name: Yarn deploy
-        run: yarn deploy
+      - uses: enriikke/gatsby-gh-pages-action@v2
         env:
           GH_CUSTOM_DOMAIN: "zappie.io"
           GH_DEPLOY_REPO: "github.com/zappie-io/zappie-io.github.io.git"
-          GH_ACCESS_TOKEN: ${{ secrets.gh_access_token }}
           SITE_TITLE: "zappie"
           SITE_URL: "https://zappie.io"
           GOOGLE_TRACKING_ID: "G-XWD2LXLTJK"
+        with:
+          access-token: ${{ secrets.gh_access_token }}
