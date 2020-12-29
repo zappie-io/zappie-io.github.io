@@ -33,3 +33,11 @@ jobs:
         with:
           deploy-branch: gh-pages
           access-token: ${{ secrets.gh_access_token }}
+
+      - name: Discord Notifier
+        uses: fateyan/action-discord-notifier@v1.2.0
+        with:
+          # A full discord webhook url
+          webhook: ${{ secrets.discord_webhook }}
+          # Message title
+          message-title: "New version zappie.io deployed successfully. Check https://zappie.io in few minutes."
