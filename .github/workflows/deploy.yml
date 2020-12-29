@@ -19,18 +19,21 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    environment: production
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+        
       - name: Yarn install
         run: yarn install --frozen-lockfile
 
-      - name: Yarn build
-        run: yarn build
-
-      - name: Yarn test
-        run: yarn test
+      - name: Yarn deploy
+        run: yarn deploy
+        env:
+          GH_CUSTOM_DOMAIN: "zappie.io"
+          GH_DEPLOY_REPO: "github.com/zappie-io/zappie-io.github.io.git"
+          GH_ACCESS_TOKEN: ${{ secrets.gh_access_token }}
+          SITE_TITLE: "zappie"
+          SITE_URL: "https://zappie.io"
+          GOOGLE_TRACKING_ID: "G-XWD2LXLTJK"
