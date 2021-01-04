@@ -1,0 +1,62 @@
+@import "src/shared/styles/global.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-xxl 0;
+
+  // 480px
+  // 640px
+  // 960px
+  // TODO: Make const breakpoints
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+}
+
+// TODO: Delete inherited from H1-H6 styles
+// TODO: Make const fonts
+.title {
+  color: $color-title;
+  line-height: 90px;
+  font-size: 64px;
+
+  // TODO: Make const breakpoints
+  @media (min-width: 960px) and (max-width: 1050px) {
+    line-height: 64px;
+    font-size: 48px;
+  }
+
+  // TODO: Make const breakpoints
+  @media (max-width: 640px) {
+    line-height: 64px;
+    font-size: 48px;
+  }
+}
+
+// TODO: Make const fonts
+.desc {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+.button {
+  margin-top: 32px;
+  display: inline-block;
+
+  font-size: 24px;
+  line-height: 24px;
+
+  padding: 20px $padding-k;
+  border-radius: $border-radius;
+  color: $color-title;
+  background-color: $color-primary;
+}
+
+.heroImage {
+  width: 480px;
+  height: 420px;
+}
