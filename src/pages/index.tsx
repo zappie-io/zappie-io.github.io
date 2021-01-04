@@ -1,12 +1,13 @@
 import * as React from "react";
 import { PageProps } from "gatsby";
 import Header from "../components/header/header.component";
+import Layout from "../components/layout/layout.component";
 
 const IndexPage = (props: PageProps) => {
   return (
-    <main>
+    <Layout>
       <Header />
-    </main>
+    </Layout>
   );
 };
 
