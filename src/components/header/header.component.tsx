@@ -1,8 +1,19 @@
 import * as React from "react";
+import { Link as GLink } from "gatsby";
+
+import MainNav from "../mainNav/mainNav.component";
 import * as styles from "./header.module.scss";
+import logo from "src/images/zappie.svg";
 
 const Header = () => {
-  return <main>Test</main>;
+  return (
+    <header className={styles.wrapper}>
+      <GLink className={styles.logoWrapper} to={"#"}>
+        <img className={styles.logo} src={logo} alt="Logo" />
+      </GLink>
+      <MainNav className={styles.nav} />
+    </header>
+  );
 };
 
 export default Header;

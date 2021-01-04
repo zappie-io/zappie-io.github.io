@@ -1,6 +1,16 @@
 @import "~normalize.css/normalize.css";
 @import "src/shared/styles/global.scss";
 
+// Global styles
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
 html,
 body {
   background-color: $color-background;
@@ -8,6 +18,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+// Layout stuff
 .layout {
   display: flex;
   justify-content: center;

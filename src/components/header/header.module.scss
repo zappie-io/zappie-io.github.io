@@ -1,1 +1,22 @@
 @import "src/shared/styles/global.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-xxl 0;
+}
+
+.logoWrapper {
+  display: inline-block;
+}
+
+.logo {
+  width: 101px;
+  height: 38px;
+}
+
+.nav {
+  align-self: flex-end;
+}
