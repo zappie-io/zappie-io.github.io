@@ -7,8 +7,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,10 +28,16 @@ jobs:
 
       - uses: enriikke/gatsby-gh-pages-action@v2
         env:
-          GH_CUSTOM_DOMAIN: "zappie.io"
-          SITE_TITLE: "zappie"
           SITE_URL: "https://zappie.io"
           GOOGLE_TRACKING_ID: "G-XWD2LXLTJK"
         with:
-          deploy-repo:  "zappie-io.github.io.git"
+          deploy-branch: gh-pages
           access-token: ${{ secrets.gh_access_token }}
+
+      - name: Discord Notifier
+        uses: fateyan/action-discord-notifier@v1.2.0
+        with:
+          # A full discord webhook url
+          webhook: ${{ secrets.discord_webhook }}
+          # Message title
+          message-title: "New version zappie.io deployed successfully. Check https://zappie.io in few minutes."
