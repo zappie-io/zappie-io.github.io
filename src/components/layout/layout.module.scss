@@ -1,0 +1,32 @@
+@import "~normalize.css/normalize.css";
+@import "src/shared/styles/global.scss";
+
+// Global styles
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+html,
+body {
+  background-color: $color-background;
+  color: $color-secondary;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// Layout stuff
+.layout {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  flex: 1;
+  box-sizing: content-box;
+  max-width: $layout-max-width;
+  padding: 0 $horizontal-padding;
+}

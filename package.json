@@ -12,8 +12,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages-clean && cp ./CNAME ./public/CNAME && dotenv cross-var gh-pages -b master -d public -r https://%GH_ACCESS_TOKEN%@%GH_DEPLOY_REPO%"
+    "clean": "gatsby clean"
   },
   "license": "0BSD",
   "dependencies": {
@@ -28,14 +27,15 @@
     "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-sharp": "^2.9.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^4.0.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "cross-var": "^1.1.0",
     "dotenv": "^8.2.0",
-    "gh-pages": "^3.1.0"
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-scss-typescript": "^4.0.13"
   }
 }

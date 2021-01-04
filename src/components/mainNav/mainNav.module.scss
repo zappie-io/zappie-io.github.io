@@ -1,0 +1,37 @@
+@import "src/shared/styles/global.scss";
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    line-height: $font-size-normal;
+    font-size: $font-size-normal;
+    display: inline-block;
+    margin: 0 $padding-s;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &,
+    > a {
+      color: $color-title;
+    }
+
+    > a {
+      padding: $padding-l $padding-xxl;
+      display: inline-block;
+    }
+  }
+}
+
+.bordered {
+  border-radius: $border-radius;
+  border: 2px solid $color-primary;
+}
