@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 // Colors
-$color-background: #101011;
+$color-background: #fafafc;
+$color-background-dark: #090018;
 $color-primary: #6100ff;
-$color-title: #ffffff;
-$color-secondary: #857ca8;
+$color-title: #000000;
+$color-secondary: #716881;
 
 // Variables
 $padding-xs: 4px;
@@ -13,7 +16,7 @@ $padding-xl: 24px;
 $padding-xxl: 32px;
 $padding-k: 48px;
 
-$border-radius: 10px;
+$border-radius: 12px;
 
 // Paddings
 $horizontal-padding: $padding-m;
@@ -23,3 +26,15 @@ $layout-max-width: 1110px;
 
 // Fonts
 $font-size-normal: 16px;
+
+// Global styles
+.container {
+  margin: 0 auto;
+  box-sizing: content-box;
+  max-width: $layout-max-width;
+  flex-direction: column;
+
+  @media (max-width: 960px) {
+    padding: 0 $padding-l;
+  }
+}

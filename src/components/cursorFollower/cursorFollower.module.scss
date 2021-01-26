@@ -1,0 +1,17 @@
+@import "src/shared/styles/global.scss";
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // transition: transform 0.2s;
+
+  width: 100px;
+  height: 100px;
+
+  margin-top: -50px;
+  margin-left: -50px;
+
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+}

@@ -7,12 +7,14 @@ import logoImage from "src/images/zappie.svg";
 
 const Header = () => {
   return (
-    <header className={styles.wrapper}>
-      <GLink className={styles.logoWrapper} to={"#"}>
-        <img className={styles.logo} src={logoImage} alt="Logo" />
-      </GLink>
-      <MainNav className={styles.nav} />
-    </header>
+    <div className={styles.container}>
+      <header className={styles.wrapper}>
+        <GLink className={styles.logoWrapper} to={"#"}>
+          <img className={styles.logo} src={logoImage} alt="Logo" />
+        </GLink>
+        <MainNav className={styles.nav} />
+      </header>
+    </div>
   );
 };
 

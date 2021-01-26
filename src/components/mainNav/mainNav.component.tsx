@@ -10,10 +10,6 @@ const MainNav = ({ className }) => {
       title: "Service",
       url: "#",
     },
-    {
-      title: "Apps",
-      url: "#",
-    },
   ];
 
   return (

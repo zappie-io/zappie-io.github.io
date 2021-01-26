@@ -5,7 +5,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: $padding-xxl 0;
+  padding-top: $padding-xxl;
+  padding-bottom: $padding-xxl;
+
+  // TODO: Make const breakpoints
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 }
 
 .logoWrapper {
@@ -19,4 +25,8 @@
 
 .nav {
   align-self: flex-end;
+
+  @media (max-width: 640px) {
+    margin: $padding-l auto 0 auto;
+  }
 }

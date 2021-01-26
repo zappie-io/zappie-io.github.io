@@ -25,13 +25,18 @@
     }
 
     > a {
-      padding: $padding-l $padding-xxl;
+      padding: 14px $padding-xxl;
       display: inline-block;
     }
   }
-}
 
-.bordered {
-  border-radius: $border-radius;
-  border: 2px solid $color-primary;
+  .bordered {
+    border-radius: $border-radius;
+    border: 2px solid $color-primary;
+
+    &,
+    > a {
+      color: $color-primary;
+    }
+  }
 }

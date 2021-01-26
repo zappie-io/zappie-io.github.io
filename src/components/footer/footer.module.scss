@@ -1,0 +1,120 @@
+@import "src/shared/styles/global.scss";
+
+.wrapper {
+  background-color: $color-background-dark;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.info {
+  @extend .container;
+  flex: 1;
+
+  padding-top: $padding-xl;
+  padding-bottom: $padding-xl;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.signature {
+  @extend .container;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #fff;
+
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 140%;
+  color: #fff;
+
+  margin: 0;
+  padding: $padding-xxl 0 $padding-xl 0;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+  color: #716881;
+
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  flex: 1;
+}
+
+.centered {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 640px) {
+    padding: $padding-xxl 0;
+    justify-content: left;
+  }
+}
+
+.button {
+  height: 56px;
+
+  display: inline-block;
+
+  font-size: 20px;
+  line-height: 56px;
+
+  padding: 0 $padding-xxl;
+  border-radius: $border-radius;
+  color: #ffffff;
+  background-color: $color-primary;
+}
+
+.logoWrapper {
+  display: inline-block;
+}
+
+.logo {
+  width: 98px;
+  height: 30px;
+}

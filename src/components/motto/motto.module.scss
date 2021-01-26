@@ -1,0 +1,16 @@
+@import "src/shared/styles/global.scss";
+
+.wrapper {
+  font-size: 48px;
+  line-height: 160%;
+  font-weight: 400;
+
+  font-weight: 300;
+  color: $color-title;
+
+  margin: 150px 0;
+
+  @media (max-width: 960px) {
+    margin-top: 0px;
+  }
+}
