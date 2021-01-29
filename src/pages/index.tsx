@@ -16,7 +16,7 @@ const IndexPage = (props: PageProps) => {
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
-        <title>My Title</title>
+        <title>zappie - React Native & UI/UX Agency</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Header />

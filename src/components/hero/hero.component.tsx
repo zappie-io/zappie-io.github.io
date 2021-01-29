@@ -25,7 +25,7 @@ const Hero = () => {
             Let's talk
           </GLink>
         </div>
-        <img className={styles.heroImage} src={heroImage} alt="Zappie hero" />
+        {/* <img className={styles.heroImage} src={heroImage} alt="Zappie hero" /> */}
       </div>
     </div>
   );
