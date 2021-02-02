@@ -33,7 +33,7 @@ const Footer = () => {
           </GLink>
 
           <p className={styles.description}>
-            &copy; 2021 Zappie. All rights reserved. Made with love in Poznań
+            &copy; 2021 Zappie. All rights reserved. Made with ♡ in Poznań
           </p>
         </div>
       </div>

@@ -1,0 +1,27 @@
+@import "src/shared/styles/global.scss";
+
+.wrapper {
+  width: 445px;
+}
+
+.header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 160%;
+  color: #13032d;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+}
+
+.description {
+  font-weight: 300;
+  color: #716881;
+  font-size: 20px;
+  line-height: 160%;
+
+  margin: 0;
+  padding: 0;
+}
