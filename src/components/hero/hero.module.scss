@@ -73,3 +73,158 @@
     position: relative;
   }
 }
+
+.canvas {
+  position: relative;
+  top: -250px;
+  left: -400px;
+}
+
+.phone {
+  position: absolute;
+  width: 286px;
+  height: 449px;
+
+  left: 45px;
+  top: 71px;
+
+  background: linear-gradient(166.48deg, #f9fafc 25.73%, #ffffff 88.82%);
+  box-shadow: -48px -24px 120px #ffffff, 48px 24px 30px rgba(235, 240, 247, 0.5);
+  border-radius: 48px;
+
+  z-index: 2;
+}
+
+.appleIcon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 0px;
+  top: 142px;
+
+  background: linear-gradient(166.48deg, #f9fafc 25.73%, #ffffff 88.82%);
+  box-shadow: -48px -24px 32px #ffffff, 48px 24px 32px rgba(235, 240, 247, 0.5);
+  border-radius: 16px;
+
+  z-index: 3;
+}
+.androidIcon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 148px;
+  top: 222px;
+
+  background: linear-gradient(166.48deg, #f9fafc 25.73%, #ffffff 88.82%);
+  box-shadow: -48px -24px 32px #ffffff, 48px 24px 32px rgba(235, 240, 247, 0.5);
+  border-radius: 16px;
+
+  z-index: 3;
+}
+
+.circle {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 151px;
+  top: 408px;
+
+  background: #fefefe;
+  box-shadow: -8px -8px 24px #ffffff, 7px 7px 24px 2px #ced6e6;
+  filter: blur(16px);
+  border-radius: 42px;
+
+  z-index: 4;
+}
+
+.darkDecor {
+  position: absolute;
+  width: 160px;
+  height: 180px;
+  left: 214px;
+  top: 0px;
+
+  background-color: #6100ff;
+  border-radius: 25px;
+
+  z-index: 3;
+}
+
+.darkDecorMask {
+  position: absolute;
+  width: 160px;
+  height: 180px;
+  left: 171px;
+  top: 71px;
+
+  background: linear-gradient(166.48deg, #f9fafc 0%, #fafbfd 100%);
+  border-radius: 48px;
+
+  z-index: 4;
+}
+
+.blured {
+  position: absolute;
+  width: 195px;
+  height: 170px;
+  left: 244px;
+  top: 30px;
+
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(31px);
+  perspective: 1px;
+  transform: translate3d(0, 0, 0) scale(1);
+
+  z-index: 4;
+}
+
+.figmaWrapper {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+}
+
+.reactWrapper {
+  position: absolute;
+  left: 35px;
+  top: 95px;
+}
+
+.figmaIcon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+
+  background: #fefefe;
+  opacity: 0.48;
+  box-shadow: -8px -8px 24px #ffffff, 8px 8px 24px 2px #e9edf7;
+  border-radius: 12px;
+}
+
+.textWrapper {
+  position: absolute;
+  left: 55px;
+  top: 8px;
+}
+
+.textWrapperTitle {
+  position: absolute;
+
+  width: 62.06px;
+  height: 12.26px;
+  background: #ffffff;
+  opacity: 0.48;
+  border-radius: 2px;
+}
+
+.textWrapperDesc {
+  position: absolute;
+  top: 18px;
+
+  width: 29.88px;
+  height: 7.66px;
+  background: #ffffff;
+  opacity: 0.48;
+  border-radius: 2px;
+}

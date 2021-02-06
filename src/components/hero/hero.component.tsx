@@ -25,6 +25,31 @@ const Hero = () => {
             Let's talk
           </GLink>
         </div>
+        <div className={styles.canvas}>
+          <div className={styles.appleIcon}></div>
+          <div className={styles.androidIcon}></div>
+          <div className={styles.phone}></div>
+          <div className={styles.circle}></div>
+          <div className={styles.darkDecor}></div>
+          <div className={styles.darkDecorMask}></div>
+          <div className={styles.blured}>
+            <div className={styles.figmaWrapper}>
+              <div className={styles.figmaIcon}></div>
+              <div className={styles.textWrapper}>
+                <div className={styles.textWrapperTitle}></div>
+                <div className={styles.textWrapperDesc}></div>
+              </div>
+            </div>
+
+            <div className={styles.reactWrapper}>
+              <div className={styles.figmaIcon}></div>
+              <div className={styles.textWrapper}>
+                <div className={styles.textWrapperTitle}></div>
+                <div className={styles.textWrapperDesc}></div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* <img className={styles.heroImage} src={heroImage} alt="Zappie hero" /> */}
       </div>
     </div>

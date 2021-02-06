@@ -11,6 +11,7 @@ import SectionRow from "../components/sectionRow/sectionRow.component";
 import SectionHeader from "../components/sectionHeader/sectionHeader.component";
 import Testimonial from "../components/testimonial/testimonial.component";
 import TestimonialSections from "../components/testimonialSection/testimonialSection.component";
+import CursorFollower from "../components/cursorFollower/cursorFollower.component";
 
 const IndexPage = (props: PageProps) => {
   return (
@@ -24,6 +25,7 @@ const IndexPage = (props: PageProps) => {
         <title>zappie - React Native & UI/UX Agency</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
+      <CursorFollower />
       <Header />
       <Hero />
       <Motto />

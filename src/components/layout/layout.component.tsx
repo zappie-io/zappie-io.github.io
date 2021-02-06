@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { isBrowser } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 
 import * as styles from "./layout.module.scss";
 
@@ -28,7 +28,7 @@ const BrowserLayout = ({ children }) => {
 
     cancelAnimationFrame(animationRef.current);
     animationRef.current = requestAnimationFrame(animate);
-  });
+  }, [wrapperRef.current, animationRef.current]);
 
   return (
     <div
@@ -49,10 +49,10 @@ const MobileLayout = ({ children }) => {
 };
 
 const Layout = (props) => {
-  if (isBrowser) {
-    return <BrowserLayout {...props} />;
-  } else {
+  if (isMobile) {
     return <MobileLayout {...props} />;
+  } else {
+    return <BrowserLayout {...props} />;
   }
 };
 
