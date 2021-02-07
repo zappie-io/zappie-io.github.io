@@ -9,7 +9,13 @@ interface IProps {
 
 const SectionHeader = ({ category, title, description }: IProps) => {
   return (
-    <div className={styles.container}>
+    <div
+      data-sal="fade"
+      data-sal-duration="600"
+      data-sal-delay="200"
+      data-sal-easing="ease"
+      className={styles.container}
+    >
       <div className={styles.wrapper}>
         <div className={styles.column}>
           <h2 className={styles.category}>{category}</h2>

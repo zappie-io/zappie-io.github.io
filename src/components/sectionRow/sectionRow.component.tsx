@@ -9,7 +9,13 @@ interface IProps {
 const SectionRow = ({ left, right }: IProps) => {
   return (
     <div className={styles.container}>
-      <div className={styles.wrapper}>
+      <div
+        data-sal="fade"
+        data-sal-duration="600"
+        data-sal-delay="200"
+        data-sal-easing="ease"
+        className={styles.wrapper}
+      >
         <div className={styles.column}>{left}</div>
         <div className={styles.column}>{right}</div>
       </div>

@@ -8,7 +8,12 @@ const Footer = () => {
   return (
     <footer className={styles.wrapper}>
       <div className={styles.signature}>
-        <div className={styles.column}>
+        <div
+          data-sal="fade"
+          data-sal-duration="600"
+          data-sal-easing="ease"
+          className={styles.column}
+        >
           <p className={styles.subtitle}>Let’s talk</p>
           <h3 className={styles.title}>
             Ready to buid app

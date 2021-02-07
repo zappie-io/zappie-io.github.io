@@ -33,12 +33,12 @@ const Hero = () => {
   };
 
   const onMove = (event: MouseEvent) => {
-    setOffsetDarkDecor(slide(event, 100, phone));
-    setOffsetPhone(slide(event, 70, phone));
-    setOffsetBlured(slide(event, 50, blured));
-    setOffsetAppleIcon(slide(event, 46, appleIcon));
-    setOffsetAndroidIcon(slide(event, 39, androidIcon));
-    setOffsetTextDecor(slide(event, 130, textDecor));
+    // setOffsetDarkDecor(slide(event, 100, phone));
+    // setOffsetPhone(slide(event, 70, phone));
+    // setOffsetBlured(slide(event, 50, blured));
+    // setOffsetAppleIcon(slide(event, 46, appleIcon));
+    // setOffsetAndroidIcon(slide(event, 39, androidIcon));
+    // setOffsetTextDecor(slide(event, 130, textDecor));
   };
 
   useLayoutEffect(() => {

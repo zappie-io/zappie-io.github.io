@@ -78,6 +78,14 @@
   position: relative;
   top: -250px;
   left: -400px;
+
+  img {
+    user-select: none;
+  }
+
+  * {
+    transition: transform 0.2s;
+  }
 }
 
 .phone {

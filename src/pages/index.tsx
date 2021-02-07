@@ -1,6 +1,7 @@
 import * as React from "react";
 import { PageProps } from "gatsby";
 import { Helmet } from "react-helmet";
+
 import Header from "../components/header/header.component";
 import Layout from "../components/layout/layout.component";
 import Hero from "../components/hero/hero.component";
@@ -12,6 +13,7 @@ import SectionHeader from "../components/sectionHeader/sectionHeader.component";
 import Testimonial from "../components/testimonial/testimonial.component";
 import TestimonialSections from "../components/testimonialSection/testimonialSection.component";
 import CursorFollower from "../components/cursorFollower/cursorFollower.component";
+import DevelopmentDecor from "../components/developmentDecor/developmentDecor.component";
 
 const IndexPage = (props: PageProps) => {
   return (
@@ -41,7 +43,7 @@ const IndexPage = (props: PageProps) => {
         description={<span>We are here to support your growth</span>}
       />
       <SectionRow
-        left={<></>}
+        left={<DevelopmentDecor />}
         right={
           <TextSection
             title={"Development"}

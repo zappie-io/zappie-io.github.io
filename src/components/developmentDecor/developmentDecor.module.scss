@@ -1,0 +1,144 @@
+@import "src/shared/styles/global.scss";
+
+.wrapper {
+  position: relative;
+  width: 445px;
+  height: 455px;
+  user-select: none;
+}
+
+.listingBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 350px;
+  height: 174px;
+
+  background: linear-gradient(166.48deg, #f9fafc 25.73%, #ffffff 88.82%);
+  box-shadow: 64px 32px 120px rgba(187, 201, 220, 0.16);
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: row;
+
+  z-index: 3;
+}
+
+.numbers {
+  position: relative;
+  color: rgba(133, 124, 168, 0.32);
+  letter-spacing: -0.04em;
+  width: 33px;
+  font-size: 13px;
+  border-right: 1px solid #f0f0f5;
+  height: 100%;
+  padding: 32px 0;
+  z-index: 4;
+  line-height: 22px;
+
+  text-align: center;
+  align-items: center;
+}
+
+.listing {
+  height: 100%;
+  padding: 32px 24px;
+  line-height: 22px;
+  font-size: 13px;
+  font-family: "Courier New", Courier, monospace;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #585858;
+}
+
+.purple {
+  color: #6112ff;
+}
+
+.yellow {
+  color: #edc04b;
+}
+
+.red {
+  color: #e46886;
+}
+
+.input {
+  padding: 0 24px;
+
+  position: absolute;
+  width: 321px;
+  height: 60px;
+  right: 0px;
+  bottom: 175px;
+
+  border: 1px solid rgba(133, 124, 168, 0.16);
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  font-size: 16px;
+  line-height: 60px;
+  color: #13032d;
+
+  font-family: "Courier New", Courier, monospace;
+}
+
+.highlightBox {
+  position: absolute;
+  width: 255px;
+  height: 159px;
+  right: 0px;
+  bottom: 0px;
+
+  background: linear-gradient(166.48deg, #f9fafc 25.73%, #ffffff 88.82%);
+  box-shadow: 64px 32px 120px rgba(187, 201, 220, 0.16);
+  border-radius: 16px;
+}
+
+.scroll {
+  position: absolute;
+  width: 6px;
+  height: 24px;
+  right: 14px;
+  top: 16px;
+
+  background: #857ca8;
+  opacity: 0.08;
+  border-radius: 4px;
+}
+
+.line {
+  height: 38px;
+  line-height: 38px;
+  margin: 0 36px 0 14px;
+
+  font-size: 16px;
+  color: rgba(113, 104, 129, 0.48);
+  font-family: "Courier New", Courier, monospace;
+  padding: 0 8px;
+}
+
+.lineActive {
+  background: #f6f7fa;
+  border-radius: 8px;
+  color: #13032d;
+}
+
+.folder {
+  position: absolute;
+  width: 80px;
+  height: 71.85px;
+  left: 40px;
+  bottom: 47.15px;
+}
