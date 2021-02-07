@@ -3,8 +3,14 @@ import { Link as GLink } from "gatsby";
 
 import * as styles from "./footer.module.scss";
 import logoImage from "src/images/zappie_white.svg";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const onSubmit = () => {
+    alert(email);
+  };
+
   return (
     <footer className={styles.wrapper}>
       <div className={styles.signature}>
@@ -24,10 +30,21 @@ const Footer = () => {
             Get free estimation and consultation
           </p>
         </div>
-        <div className={styles.centered}>
-          <GLink className={styles.button} to={"#"}>
-            Let's talk
-          </GLink>
+        <div id={"contact"} className={styles.contactForm}>
+          <input
+            placeholder={"Email"}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className={styles.input}
+            type="email"
+          />
+          <div>
+            <p>By sending email, I agree to zappie with me</p>
+
+            <div className={styles.button} onClick={onSubmit}>
+              Let's talk
+            </div>
+          </div>
         </div>
       </div>
 

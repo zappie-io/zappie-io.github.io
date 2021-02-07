@@ -7,6 +7,7 @@ import iconAndroid from "src/images/icons/icon_android.svg";
 import iconApple from "src/images/icons/icon_apple.svg";
 import iconReact from "src/images/icons/icon_react.svg";
 import iconFigma from "src/images/icons/icon_figma.svg";
+import iconClutch from "src/images/icons/clutch.svg";
 
 const Hero = () => {
   const phone = useRef(null);
@@ -33,12 +34,12 @@ const Hero = () => {
   };
 
   const onMove = (event: MouseEvent) => {
-    // setOffsetDarkDecor(slide(event, 100, phone));
-    // setOffsetPhone(slide(event, 70, phone));
-    // setOffsetBlured(slide(event, 50, blured));
-    // setOffsetAppleIcon(slide(event, 46, appleIcon));
-    // setOffsetAndroidIcon(slide(event, 39, androidIcon));
-    // setOffsetTextDecor(slide(event, 130, textDecor));
+    setOffsetDarkDecor(slide(event, 100, phone));
+    setOffsetPhone(slide(event, 70, phone));
+    setOffsetBlured(slide(event, 50, blured));
+    setOffsetAppleIcon(slide(event, 46, appleIcon));
+    setOffsetAndroidIcon(slide(event, 39, androidIcon));
+    setOffsetTextDecor(slide(event, 130, textDecor));
   };
 
   useLayoutEffect(() => {
@@ -68,6 +69,13 @@ const Hero = () => {
 
           <GLink className={styles.button} to={"#"}>
             Let's talk
+          </GLink>
+
+          <GLink to={"https://clutch.co/profile/zappie-0"}>
+            <div className={styles.clutchWrapper}>
+              Find us on
+              <img src={iconClutch} alt="Zappie clutch" />
+            </div>
           </GLink>
         </div>
         <div className={styles.canvas}>

@@ -11,3 +11,5 @@ export const centered: string;
 export const button: string;
 export const logoWrapper: string;
 export const logo: string;
+export const contactForm: string;
+export const input: string;

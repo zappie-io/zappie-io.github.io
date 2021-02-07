@@ -8,7 +8,11 @@ const MainNav = ({ className }) => {
   const links: Link[] = [
     {
       title: "Service",
-      url: "#",
+      url: "#service",
+    },
+    {
+      title: "About",
+      url: "https://clutch.co/profile/zappie-0",
     },
   ];
 
@@ -22,7 +26,7 @@ const MainNav = ({ className }) => {
         ))}
 
         <li className={styles.bordered}>
-          <GLink to={"#"}>{"Let’s talk"}</GLink>
+          <GLink to={"#contact"}>{"Let’s talk"}</GLink>
         </li>
       </ul>
     </nav>

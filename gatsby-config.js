@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: process.env.SITE_URL,
   },
   plugins: [
+    "gatsby-plugin-anchor-links",
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {

@@ -3,7 +3,7 @@ export const wrapper: string;
 export const title: string;
 export const desc: string;
 export const button: string;
-export const heroImage: string;
+export const clutchWrapper: string;
 export const canvas: string;
 export const phone: string;
 export const appleIcon: string;

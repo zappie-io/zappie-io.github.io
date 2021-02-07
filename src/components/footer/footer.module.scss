@@ -108,6 +108,10 @@
   border-radius: $border-radius;
   color: #ffffff;
   background-color: $color-primary;
+
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
 }
 
 .logoWrapper {
@@ -117,4 +121,45 @@
 .logo {
   width: 98px;
   height: 30px;
+}
+
+.contactForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    height: 22px;
+    color: #716881;
+
+    margin: 32px 0 48px 0;
+  }
+}
+
+.input {
+  position: relative;
+  z-index: 10;
+  height: 50px;
+  line-height: 50px;
+  background: none;
+  border-color: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: none !important;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 160%;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+
+  &:-webkit-autofill {
+    color: #fff !important;
+  }
+
+  &::placeholder {
+    color: #fff;
+  }
 }

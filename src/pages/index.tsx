@@ -32,6 +32,7 @@ const IndexPage = (props: PageProps) => {
       <Header />
       <Hero />
       <Motto />
+      <div id={"service"} />
       <SectionHeader
         title={
           <span>
