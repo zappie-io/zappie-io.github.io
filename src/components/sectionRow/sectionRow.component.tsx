@@ -4,9 +4,10 @@ import * as styles from "./sectionRow.module.scss";
 interface IProps {
   left: JSX.Element | string;
   right: JSX.Element | string;
+  inversedMobile?: boolean;
 }
 
-const SectionRow = ({ left, right }: IProps) => {
+const SectionRow = ({ left, right, inversedMobile }: IProps) => {
   return (
     <div className={styles.container}>
       <div
@@ -14,7 +15,9 @@ const SectionRow = ({ left, right }: IProps) => {
         data-sal-duration="600"
         data-sal-delay="200"
         data-sal-easing="ease"
-        className={styles.wrapper}
+        className={`${styles.wrapper} ${
+          inversedMobile ? styles.inversedMobile : ""
+        }`}
       >
         <div className={styles.column}>{left}</div>
         <div className={styles.column}>{right}</div>

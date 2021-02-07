@@ -15,6 +15,10 @@
   @media (max-width: 960px) {
     flex-direction: column;
   }
+
+  @media (max-width: 640px) {
+    margin-bottom: 82px;
+  }
 }
 
 // TODO: Delete inherited from H1-H6 styles
@@ -35,6 +39,10 @@
   @media (max-width: 640px) {
     line-height: 64px;
     font-size: 48px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -43,6 +51,12 @@
   font-size: 24px;
   line-height: 160%;
   font-weight: 300;
+
+  @media (max-width: 640px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .button {
@@ -88,6 +102,10 @@
 
   * {
     transition: transform 0.3s;
+  }
+
+  @media (max-width: 640px) {
+    display: none;
   }
 }
 

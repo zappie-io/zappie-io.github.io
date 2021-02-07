@@ -12,7 +12,7 @@ interface IProps {
 
 const Testimonial = ({ description, author }: IProps) => {
   return (
-    <div className={styles.container}>
+    <div>
       <div className={styles.description}>{description}</div>
       <div className={styles.author}>
         <img

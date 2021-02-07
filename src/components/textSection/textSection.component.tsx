@@ -8,11 +8,9 @@ interface IProps {
 
 const TextSection = ({ title, description }: IProps) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <h3 className={styles.header}>{title}</h3>
-        <p className={styles.description}>{description}</p>
-      </div>
+    <div className={styles.wrapper}>
+      <h3 className={styles.header}>{title}</h3>
+      <p className={styles.description}>{description}</p>
     </div>
   );
 };

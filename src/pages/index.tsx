@@ -65,6 +65,7 @@ const IndexPage = (props: PageProps) => {
           />
         }
         right={<DesignDecor />}
+        inversedMobile
       />
 
       <SectionHeader
@@ -83,11 +84,11 @@ const IndexPage = (props: PageProps) => {
           <Testimonial
             description={
               <span>
-                They have been able to complete everything
+                {"They have been able to complete everything "}
                 <br />
-                that we threw at them so far both fast and
+                {"that we threw at them so far both fast and "}
                 <br />
-                economically.
+                {"economically."}
               </span>
             }
             author={{
@@ -99,11 +100,11 @@ const IndexPage = (props: PageProps) => {
           <Testimonial
             description={
               <span>
-                They have been able to complete everything
+                {"They have been able to complete everything "}
                 <br />
-                that we threw at them so far both fast and
+                {"that we threw at them so far both fast and "}
                 <br />
-                economically.
+                {"economically."}
               </span>
             }
             author={{

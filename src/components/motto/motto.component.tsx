@@ -5,11 +5,11 @@ const Motto = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        We buid outstanding react native apps for sturtups.
+        {"We buid outstanding react native apps for sturtups. "}
         <br />
-        Talented people of design and code behind.
+        {"Talented people of design and code behind. "}
         <br />
-        Only highest quality - no bullshit.
+        {"Only highest quality - no bullshit. "}
       </div>
     </div>
   );

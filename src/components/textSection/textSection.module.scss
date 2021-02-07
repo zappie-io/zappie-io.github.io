@@ -2,6 +2,10 @@
 
 .wrapper {
   width: 445px;
+
+  @media (max-width: 640px) {
+    width: initial;
+  }
 }
 
 .header {

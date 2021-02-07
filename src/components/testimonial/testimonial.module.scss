@@ -8,6 +8,12 @@
   color: #716881;
 
   margin-bottom: 32px;
+
+  @media (max-width: 640px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .author {

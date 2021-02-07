@@ -55,19 +55,19 @@ const Hero = () => {
       <div className={styles.wrapper}>
         <div>
           <h1 className={styles.title}>
-            Top-notch
+            {"Top-notch "}
             <br />
-            React Native apps
+            {"React Native apps "}
             <br />
-            with brush of UX
+            {"with brush of UX "}
           </h1>
           <h2 className={styles.desc}>
-            Top tech talent to design, develop and deploy
+            {"Top tech talent to design, develop and deploy "}
             <br />
-            your mobile application
+            {"your mobile application"}
           </h2>
 
-          <GLink className={styles.button} to={"#"}>
+          <GLink className={styles.button} to={"#contact"}>
             Let's talk
           </GLink>
 

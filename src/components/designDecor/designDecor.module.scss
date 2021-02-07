@@ -5,6 +5,10 @@
   width: 361px;
   height: 386px;
   user-select: none;
+
+  @media (max-width: 640px) {
+    transform: scale(0.7);
+  }
 }
 
 .toolbar {

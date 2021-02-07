@@ -5,9 +5,23 @@
   flex: 1;
   flex-direction: row;
   align-items: center;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.inversedMobile {
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .column {
   flex: 1;
   padding: 120px 0;
+
+  @media (max-width: 640px) {
+    padding: 0;
+  }
 }

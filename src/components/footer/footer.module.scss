@@ -47,6 +47,9 @@
 
   @media (max-width: 640px) {
     flex-direction: column;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -78,6 +81,10 @@
 
   margin: 0;
   padding: 0;
+
+  @media (max-width: 640px) {
+    margin-top: 16px;
+  }
 }
 
 .column {
@@ -161,5 +168,9 @@
 
   &::placeholder {
     color: #fff;
+  }
+
+  @media (max-width: 640px) {
+    margin-top: 64px;
   }
 }
