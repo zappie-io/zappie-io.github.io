@@ -106,7 +106,7 @@
   box-shadow: -48px -24px 32px #ffffff, 48px 24px 32px rgba(235, 240, 247, 0.5);
   border-radius: 16px;
 
-  z-index: 3;
+  z-index: 4;
 }
 .androidIcon {
   position: absolute;
@@ -119,15 +119,15 @@
   box-shadow: -48px -24px 32px #ffffff, 48px 24px 32px rgba(235, 240, 247, 0.5);
   border-radius: 16px;
 
-  z-index: 3;
+  z-index: 4;
 }
 
 .circle {
   position: absolute;
   width: 64px;
   height: 64px;
-  left: 151px;
-  top: 408px;
+  left: 106px;
+  top: 337px;
 
   background: #fefefe;
   box-shadow: -8px -8px 24px #ffffff, 7px 7px 24px 2px #ced6e6;
@@ -140,7 +140,7 @@
 .darkDecor {
   position: absolute;
   width: 160px;
-  height: 180px;
+  height: 130px;
   left: 214px;
   top: 0px;
 
@@ -152,15 +152,16 @@
 
 .darkDecorMask {
   position: absolute;
-  width: 160px;
-  height: 180px;
-  left: 171px;
+  width: 286px;
+  height: 449px;
+
+  left: 45px;
   top: 71px;
 
-  background: linear-gradient(166.48deg, #f9fafc 0%, #fafbfd 100%);
+  background: linear-gradient(166.48deg, #f9fafc 25.73%, #ffffff 88.82%);
   border-radius: 48px;
 
-  z-index: 4;
+  z-index: 3;
 }
 
 .blured {
@@ -172,7 +173,7 @@
 
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(31px);
+  backdrop-filter: blur(20px);
   perspective: 1px;
   transform: translate3d(0, 0, 0) scale(1);
 
