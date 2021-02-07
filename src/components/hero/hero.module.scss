@@ -107,6 +107,10 @@
   border-radius: 16px;
 
   z-index: 4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .androidIcon {
   position: absolute;
@@ -120,6 +124,10 @@
   border-radius: 16px;
 
   z-index: 4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .circle {
@@ -192,15 +200,18 @@
   top: 95px;
 }
 
-.figmaIcon {
+.textIcon {
   position: absolute;
   width: 40px;
   height: 40px;
 
-  background: #fefefe;
-  opacity: 0.48;
+  background: rgba(254, 254, 254, 0.48);
   box-shadow: -8px -8px 24px #ffffff, 8px 8px 24px 2px #e9edf7;
   border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .textWrapper {
@@ -228,4 +239,45 @@
   background: #ffffff;
   opacity: 0.48;
   border-radius: 2px;
+}
+
+.textDecor {
+  font-family: sans-serif;
+  position: absolute;
+  left: 361px;
+  top: 396px;
+  user-select: none;
+
+  font-weight: 500;
+  font-size: 180px;
+  line-height: 141.4px;
+
+  color: #fff;
+  text-shadow: -48px -24px 32px #ffffff, 48px 24px 32px rgba(235, 240, 247, 0.5);
+}
+
+.textSelect {
+  position: absolute;
+  width: 241px;
+  height: 95px;
+  left: 351px;
+  top: 467px;
+
+  border: 2px solid #f0f3ff;
+  background-color: rgba(226, 220, 255, 0.05);
+  backdrop-filter: blur(5px);
+
+  z-index: 5;
+
+  > div {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+
+    left: -7px;
+    top: -7px;
+
+    border-radius: 4px;
+    background-color: #f0f3ff;
+  }
 }

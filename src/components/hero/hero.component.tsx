@@ -1,8 +1,12 @@
 import * as React from "react";
 import { Link as GLink } from "gatsby";
 import * as styles from "./hero.module.scss";
-import heroImage from "src/images/hero.svg";
 import { useLayoutEffect, useRef, useState } from "react";
+
+import iconAndroid from "src/images/icons/icon_android.svg";
+import iconApple from "src/images/icons/icon_apple.svg";
+import iconReact from "src/images/icons/icon_react.svg";
+import iconFigma from "src/images/icons/icon_figma.svg";
 
 const Hero = () => {
   const phone = useRef(null);
@@ -20,6 +24,9 @@ const Hero = () => {
   const androidIcon = useRef(null);
   const [offsetAndroidIcon, setOffsetAndroidIcon] = useState([0, 0]);
 
+  const textDecor = useRef(null);
+  const [offsetTextDecor, setOffsetTextDecor] = useState([0, 0]);
+
   const slide = (event, ratio, ref) => {
     const { left, right } = ref.current.getBoundingClientRect();
     return [(left - event.pageX) / ratio, (right - event.pageY) / ratio];
@@ -27,10 +34,11 @@ const Hero = () => {
 
   const onMove = (event: MouseEvent) => {
     setOffsetDarkDecor(slide(event, 100, phone));
-    setOffsetPhone(slide(event, 60, phone));
-    setOffsetBlured(slide(event, 40, blured));
-    setOffsetAppleIcon(slide(event, 36, appleIcon));
-    setOffsetAndroidIcon(slide(event, 20, androidIcon));
+    setOffsetPhone(slide(event, 70, phone));
+    setOffsetBlured(slide(event, 50, blured));
+    setOffsetAppleIcon(slide(event, 46, appleIcon));
+    setOffsetAndroidIcon(slide(event, 39, androidIcon));
+    setOffsetTextDecor(slide(event, 130, textDecor));
   };
 
   useLayoutEffect(() => {
@@ -69,14 +77,18 @@ const Hero = () => {
               transform: `translate3d(${offsetAppleIcon[0]}px, ${offsetAppleIcon[1]}px, 0)`,
             }}
             className={styles.appleIcon}
-          />
+          >
+            <img src={iconApple} alt="Apple" />
+          </div>
           <div
             ref={androidIcon}
             style={{
               transform: `translate3d(${offsetAndroidIcon[0]}px, ${offsetAndroidIcon[1]}px, 0)`,
             }}
             className={styles.androidIcon}
-          />
+          >
+            <img src={iconAndroid} alt="Android" />
+          </div>
           <div
             ref={phone}
             className={styles.phone}
@@ -107,7 +119,9 @@ const Hero = () => {
             className={styles.blured}
           >
             <div className={styles.figmaWrapper}>
-              <div className={styles.figmaIcon} />
+              <div className={styles.textIcon}>
+                <img src={iconFigma} alt="Figma" />
+              </div>
               <div className={styles.textWrapper}>
                 <div className={styles.textWrapperTitle} />
                 <div className={styles.textWrapperDesc} />
@@ -115,12 +129,32 @@ const Hero = () => {
             </div>
 
             <div className={styles.reactWrapper}>
-              <div className={styles.figmaIcon} />
+              <div className={styles.textIcon}>
+                <img src={iconReact} alt="React" />
+              </div>
               <div className={styles.textWrapper}>
                 <div className={styles.textWrapperTitle} />
                 <div className={styles.textWrapperDesc} />
               </div>
             </div>
+          </div>
+
+          <div
+            ref={textDecor}
+            style={{
+              transform: `translate3d(${offsetTextDecor[0]}px, ${offsetTextDecor[1]}px, 0)`,
+            }}
+            className={styles.textDecor}
+          >
+            Aa
+          </div>
+          <div
+            style={{
+              transform: `translate3d(${offsetTextDecor[0]}px, ${offsetTextDecor[1]}px, 0)`,
+            }}
+            className={styles.textSelect}
+          >
+            <div />
           </div>
         </div>
       </div>
