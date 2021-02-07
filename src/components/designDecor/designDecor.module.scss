@@ -1,0 +1,166 @@
+@import "src/shared/styles/global.scss";
+
+.wrapper {
+  position: relative;
+  width: 361px;
+  height: 386px;
+  user-select: none;
+}
+
+.toolbar {
+  position: absolute;
+  width: 300px;
+  height: 137px;
+  left: 61px;
+  top: 0px;
+
+  background: linear-gradient(166.48deg, #f9fafc 25.73%, #ffffff 88.82%);
+  box-shadow: 64px 32px 120px rgba(187, 201, 220, 0.16);
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: space-between;
+
+  padding: 24px 36px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  text-align: center;
+
+  color: #716881;
+
+  font-size: 20px;
+  font-weight: 300;
+
+  span {
+    padding: 0px 12px;
+    line-height: 40px;
+    height: 40px;
+    opacity: 0.48;
+  }
+
+  img {
+    width: 20px;
+    height: 15px;
+    opacity: 0.48;
+  }
+}
+
+span.active {
+  background: #f0f2f8;
+  color: #000;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.button {
+  padding: 0px 32px;
+
+  position: absolute;
+  line-height: 58px;
+  width: 139px;
+  height: 58px;
+  left: 0px;
+  top: 185px;
+
+  background: #6100ff;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.fontBox {
+  position: absolute;
+  width: 174px;
+  height: 58px;
+  left: 187px;
+  top: 208px;
+
+  background: linear-gradient(166.48deg, #f9fafc 25.73%, #ffffff 88.82%);
+  box-shadow: 64px 32px 120px rgba(187, 201, 220, 0.16);
+  border-radius: 10px;
+
+  display: flex;
+  flex: 1;
+  align-items: space-between;
+  justify-content: space-between;
+  flex-direction: row;
+
+  padding: 10px 14px;
+
+  span {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  span.active {
+    background: #f0f2f8;
+  }
+}
+
+.checked {
+  position: absolute;
+  width: 125px;
+  height: 72px;
+  left: 54px;
+  top: 314px;
+
+  display: flex;
+  flex-direction: row;
+
+  .label {
+    color: #13032d;
+  }
+
+  .checkbox {
+    background: #6100ff;
+  }
+}
+
+.unchecked {
+  position: absolute;
+  width: 125px;
+  height: 72px;
+  left: 54px;
+  top: 354px;
+
+  display: flex;
+  flex-direction: row;
+
+  opacity: 0.32;
+
+  .checkbox {
+    border-color: #716881;
+  }
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  margin-right: 12px;
+  border: 2px solid transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 20px;
+}

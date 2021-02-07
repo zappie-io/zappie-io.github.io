@@ -14,6 +14,7 @@ import Testimonial from "../components/testimonial/testimonial.component";
 import TestimonialSections from "../components/testimonialSection/testimonialSection.component";
 import CursorFollower from "../components/cursorFollower/cursorFollower.component";
 import DevelopmentDecor from "../components/developmentDecor/developmentDecor.component";
+import DesignDecor from "../components/designDecor/designDecor.component";
 
 const IndexPage = (props: PageProps) => {
   return (
@@ -62,7 +63,7 @@ const IndexPage = (props: PageProps) => {
             }
           />
         }
-        right={<></>}
+        right={<DesignDecor />}
       />
 
       <SectionHeader
