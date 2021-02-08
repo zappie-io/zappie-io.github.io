@@ -13,7 +13,6 @@ const SectionRow = ({ left, right, inversedMobile }: IProps) => {
       <div
         data-sal="fade"
         data-sal-duration="600"
-        data-sal-delay="200"
         data-sal-easing="ease"
         className={`${styles.wrapper} ${
           inversedMobile ? styles.inversedMobile : ""

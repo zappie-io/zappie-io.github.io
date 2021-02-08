@@ -12,7 +12,6 @@ const SectionHeader = ({ category, title, description }: IProps) => {
     <div
       data-sal="fade"
       data-sal-duration="600"
-      data-sal-delay="200"
       data-sal-easing="ease"
       className={styles.container}
     >

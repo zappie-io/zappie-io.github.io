@@ -13,7 +13,7 @@ const TestimonialSections = ({ testimonials }: IProps) => {
           <div
             data-sal="fade"
             data-sal-duration="600"
-            data-sal-delay={200 + 150 * index}
+            data-sal-delay={150 * index}
             data-sal-easing="ease"
             className={styles.column}
           >
