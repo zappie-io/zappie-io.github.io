@@ -11,15 +11,26 @@ const SectionRow = ({ left, right, inversedMobile }: IProps) => {
   return (
     <div className={styles.container}>
       <div
-        data-sal="fade"
-        data-sal-duration="600"
-        data-sal-easing="ease"
         className={`${styles.wrapper} ${
           inversedMobile ? styles.inversedMobile : ""
         }`}
       >
-        <div className={styles.column}>{left}</div>
-        <div className={styles.column}>{right}</div>
+        <div
+          data-sal="fade"
+          data-sal-duration="600"
+          data-sal-easing="ease"
+          className={styles.column}
+        >
+          {left}
+        </div>
+        <div
+          data-sal="fade"
+          data-sal-duration="600"
+          data-sal-easing="ease"
+          className={styles.column}
+        >
+          {right}
+        </div>
       </div>
     </div>
   );
